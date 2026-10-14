@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Person in cleanroom hood and mask, yellow cleanroom light">
+  <defs>
+    <radialGradient id="room" cx="38%" cy="30%" r="85%">
+      <stop offset="0" stop-color="#FFE680"/>
+      <stop offset=".55" stop-color="#F2C21B"/>
+      <stop offset="1" stop-color="#B98A00"/>
+    </radialGradient>
+    <linearGradient id="suit" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFBE6"/>
+      <stop offset=".6" stop-color="#F3E9B8"/>
+      <stop offset="1" stop-color="#D9C77A"/>
+    </linearGradient>
+    <linearGradient id="hood" x1=".15" y1="0" x2=".9" y2="1">
+      <stop offset="0" stop-color="#FFFDF0"/>
+      <stop offset=".55" stop-color="#F6EDC4"/>
+      <stop offset="1" stop-color="#DCCB82"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F7D9A8"/>
+      <stop offset="1" stop-color="#DDB27A"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="30%" cy="20%" r="70%">
+      <stop offset="0" stop-color="#FFF6B0" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#FFF6B0" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="circle"><circle cx="100" cy="100" r="100"/></clipPath>
+  </defs>
+  <g clip-path="url(#circle)">
+    <rect width="200" height="200" fill="url(#room)"/>
+    <!-- soft ceiling light panels in the background -->
+    <rect x="-10" y="14" width="64" height="9" rx="4" fill="#FFF2A0" opacity=".45"/>
+    <rect x="146" y="30" width="64" height="9" rx="4" fill="#FFF2A0" opacity=".3"/>
+    <!-- coverall shoulders -->
+    <path d="M6 206 C8 160 42 142 72 136 L128 136 C158 142 192 160 194 206 Z" fill="url(#suit)"/>
+    <path d="M100 150 V206" stroke="#C9B76A" stroke-width="2" opacity=".7"/>
+    <path d="M70 137 C80 152 120 152 130 137" fill="none" stroke="#C9B76A" stroke-width="2.4" opacity=".8"/>
+    <!-- hood: neck cape + head -->
+    <path d="M58 118 C60 146 40 150 28 170 L172 170 C160 150 140 146 142 118 Z" fill="url(#hood)"/>
+    <path d="M58 118 C62 134 74 144 100 146 C126 144 138 134 142 118" fill="none" stroke="#CDBB70" stroke-width="2.2" opacity=".75"/>
+    <ellipse cx="100" cy="84" rx="47" ry="57" fill="url(#hood)"/>
+    <!-- face opening (eyes and forehead) -->
+    <path d="M64 76 C64 58 80 52 100 52 C120 52 136 58 136 76 L136 98 C136 106 128 110 100 110 C72 110 64 106 64 98 Z" fill="#E9DDA3"/>
+    <path d="M69 77 C69 63 83 57 100 57 C117 57 131 63 131 77 L131 96 C131 102 123 105 100 105 C77 105 69 102 69 96 Z" fill="url(#skin)"/>
+    <!-- eyebrows and eyes -->
+    <path d="M78 76 Q88 71 96 75" fill="none" stroke="#7A5A34" stroke-width="3" stroke-linecap="round"/>
+    <path d="M104 75 Q112 71 122 76" fill="none" stroke="#7A5A34" stroke-width="3" stroke-linecap="round"/>
+    <ellipse cx="87" cy="87" rx="6.2" ry="4.4" fill="#fff"/><ellipse cx="113" cy="87" rx="6.2" ry="4.4" fill="#fff"/>
+    <circle cx="87.6" cy="87.2" r="3.2" fill="#3C2A18"/><circle cx="112.4" cy="87.2" r="3.2" fill="#3C2A18"/>
+    <circle cx="88.8" cy="86" r="1" fill="#fff"/><circle cx="113.6" cy="86" r="1" fill="#fff"/>
+    <!-- safety glasses -->
+    <rect x="73" y="78" width="54" height="19" rx="9" fill="#FFFFFF" opacity=".22" stroke="#B9A24D" stroke-width="1.6"/>
+    <path d="M100 82 V92" stroke="#B9A24D" stroke-width="1.6"/>
+    <!-- nose bridge hint -->
+    <path d="M100 92 Q98 101 102 103" fill="none" stroke="#C99A62" stroke-width="2" stroke-linecap="round" opacity=".8"/>
+    <!-- face mask -->
+    <path d="M62 102 C80 98 120 98 138 102 L134 126 C122 142 78 142 66 126 Z" fill="#FFFFFF"/>
+    <path d="M62 102 C80 98 120 98 138 102 L134 126 C122 142 78 142 66 126 Z" fill="url(#hood)" opacity=".55"/>
+    <path d="M72 112 H128 M70 121 H130" stroke="#D8C98A" stroke-width="1.6" opacity=".9"/>
+    <!-- light from the upper left, shadow on the right -->
+    <ellipse cx="100" cy="84" rx="47" ry="57" fill="url(#glow)"/>
+    <path d="M147 84 C147 120 130 146 108 146 C132 140 144 116 143 84 Z" fill="#8A6A00" opacity=".18"/>
+    <rect width="200" height="200" fill="#FFD400" opacity=".07"/>
+  </g>
+</svg>
